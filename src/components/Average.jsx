@@ -15,9 +15,6 @@ const average = ({ min, max }) => (
   </Card>
 );
 
-const mapStateToProps = ({ numbers: { min, max } }) => ({
-  min,
-  max,
-});
+const mapStateToProps = ({ numbers: { min, max } }) => ({ min, max });
 
 export default connect(mapStateToProps)(average);
